@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title> BMI 지수 계산기</title>
+</head>
+
+<style>
+	body{margin: 0 auto; text-align: center; float: left;}
+	#color{margin: 0 auto; text-align: center; float: left;}
+}
+	h1{font-size: 0.5em; line-height: 1.5; color: black; }
+</style>
+
+<body>
+	<div>
+	<div style="position:relative; top:100px;">
+
+		<input type="text" style="text-align: center;" placeholder="당신의 키는 ?" size="20" id="myHeight"> cm이며,
+
+		<input type="text" style="text-align: center;" placeholder="당신의 몸무게는 ?" size="20" id="myWeight"> kg입니다.
+		<br>
+		<br>
+		<button id="but">확인하기</button>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="output" style="width:600px; height:300px; background:blue; color:white;
+		text-align:center; line-height: 290px; font-size:1.5em;"> 나의 BMI 지수를 알아봅시다 !</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+
+		but.onclick = funtion() {
+
+			var myBmi = (myWeight.value / myHeight.value * myHeight.value );
+			var finalOutput = "당신의 BMI 지수는"+ finalOutput + "입니다";
+			output.innerHTML = finalOutput;
+		
+		}
+
+	</script>
+</body>
+</html>
